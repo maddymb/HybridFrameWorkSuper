@@ -4,16 +4,24 @@
   <listeners>
     <listener class-name="com.retryanalyzer.RetryTranformer"/>
   </listeners>
-  <test name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.tests.HomePageTest">
         <methods>
-          <include name="loginTest" invocation-numbers="0 0 0 0"/>
           <include name="afterMethod"/>
+          <include name="logoTest"/>
           <include name="tearDown"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.tests.HomePageTest -->
+      <class name="com.tests.LoginPageTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.tests.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

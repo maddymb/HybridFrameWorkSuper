@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Operating System : Mac]]>
@@ -7,90 +7,77 @@
     <line>
       <![CDATA[Browser Selected : Chrome]]>
     </line>
+    <line>
+      <![CDATA[Navigated To Url https://www.zoho.com/]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Login Button Clicked]]>
+    </line>
+    <line>
+      <![CDATA[loginTest test Ended]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Failed_22_02_2020_05_57_24.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Failed_22_02_2020_05_57_24.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Browser Closed]]>
+    </line>
+    <line>
+      <![CDATA[Operating System : Mac]]>
+    </line>
+    <line>
+      <![CDATA[Browser Selected : Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Navigated To Url https://www.zoho.com/]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Login Button Clicked]]>
+    </line>
+    <line>
+      <![CDATA[loginTest test Ended]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_22_02_2020_05_57_36.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_22_02_2020_05_57_36.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Operating System : Mac]]>
+    </line>
+    <line>
+      <![CDATA[Browser Selected : Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Navigated To Url https://www.zoho.com/]]>
+    </line>
+    <line>
+      <![CDATA[logoTest test Ended]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/logoTest_Failed_22_02_2020_05_57_42.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/logoTest_Failed_22_02_2020_05_57_42.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Browser Closed]]>
+    </line>
   </reporter-output>
-  <suite started-at="2019-08-18T09:39:52Z" name="Default suite" finished-at="2019-08-18T09:39:54Z" duration-ms="2375">
+  <suite started-at="2020-02-22T12:27:30Z" name="Test" finished-at="2020-02-22T12:27:42Z" duration-ms="11924">
     <groups>
     </groups>
-    <test started-at="2019-08-18T09:39:52Z" name="Default test" finished-at="2019-08-18T09:39:54Z" duration-ms="2375">
-      <class name="com.tests.LoginPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.tests.LoginPageTest@5965be2d]" started-at="2019-08-18T15:09:52Z" name="beforeMethod" finished-at="2019-08-18T15:09:54Z" duration-ms="2339" status="FAIL">
+    <test started-at="2020-02-22T12:27:30Z" name="Test_1" finished-at="2020-02-22T12:27:42Z" duration-ms="11924">
+      <class name="com.tests.HomePageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.tests.HomePageTest@14ef2482]" started-at="2020-02-22T12:27:30Z" name="beforeMethod" finished-at="2020-02-22T12:27:35Z" duration-ms="4808" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tests.LoginPageTest.loginTest() throws java.lang.Exception]]>
+                <![CDATA[public void com.tests.HomePageTest.loginTest() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=76.0.3809.100)
-  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.14.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'Madhurs-MacBook-Air.local', ip: 'fe80:0:0:0:1452:a8a3:2c2d:cd6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gh/vz_q888j5xvbw8b1gth9m57w0000gn/T/.org.chromium.Chromium.40AAN0}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 51e69abe708a24a03243888c71122980]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=76.0.3809.100)
-  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.14.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'Madhurs-MacBook-Air.local', ip: 'fe80:0:0:0:1452:a8a3:2c2d:cd6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gh/vz_q888j5xvbw8b1gth9m57w0000gn/T/.org.chromium.Chromium.40AAN0}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 51e69abe708a24a03243888c71122980
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:934)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:659)
-	at com.utility.TestUtility.getUrl(TestUtility.java:87)
-	at com.base.TestBase.initialization(TestBase.java:104)
-	at com.base.TestBase.beforeMethod(TestBase.java:189)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
             <line>
               <![CDATA[Operating System : Mac]]>
@@ -98,87 +85,158 @@ Session ID: 51e69abe708a24a03243888c71122980
             <line>
               <![CDATA[Browser Selected : Chrome]]>
             </line>
+            <line>
+              <![CDATA[Navigated To Url https://www.zoho.com/]]>
+            </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginTest()[pri:0, instance:com.tests.LoginPageTest@5965be2d]" started-at="2019-08-18T15:09:54Z" name="loginTest" finished-at="2019-08-18T15:09:54Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=76.0.3809.100)
-  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.14.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'Madhurs-MacBook-Air.local', ip: 'fe80:0:0:0:1452:a8a3:2c2d:cd6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gh/vz_q888j5xvbw8b1gth9m57w0000gn/T/.org.chromium.Chromium.40AAN0}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 51e69abe708a24a03243888c71122980]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=76.0.3809.100)
-  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.14.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'Madhurs-MacBook-Air.local', ip: 'fe80:0:0:0:1452:a8a3:2c2d:cd6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gh/vz_q888j5xvbw8b1gth9m57w0000gn/T/.org.chromium.Chromium.40AAN0}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 51e69abe708a24a03243888c71122980
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:934)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:659)
-	at com.utility.TestUtility.getUrl(TestUtility.java:87)
-	at com.base.TestBase.initialization(TestBase.java:104)
-	at com.base.TestBase.beforeMethod(TestBase.java:189)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="loginTest()[pri:0, instance:com.tests.HomePageTest@14ef2482]" started-at="2020-02-22T12:27:35Z" name="loginTest" finished-at="2020-02-22T12:27:36Z" duration-ms="1089" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Clicking on the Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Login Button Clicked]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginPageTest@5965be2d]" started-at="2019-08-18T15:09:54Z" name="tearDown" finished-at="2019-08-18T15:09:54Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.tests.HomePageTest@14ef2482]" started-at="2020-02-22T12:27:36Z" name="afterMethod" finished-at="2020-02-22T12:27:37Z" duration-ms="595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=HomePageTest.loginTest()[pri:0, instance:com.tests.HomePageTest@14ef2482] output=Clicking on the Login Button]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[loginTest test Ended]]>
+            </line>
+            <line>
+              <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_22_02_2020_05_57_36.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_22_02_2020_05_57_36.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.tests.HomePageTest@14ef2482]" started-at="2020-02-22T12:27:37Z" name="beforeMethod" finished-at="2020-02-22T12:27:42Z" duration-ms="4798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tests.HomePageTest.logoTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Operating System : Mac]]>
+            </line>
+            <line>
+              <![CDATA[Browser Selected : Chrome]]>
+            </line>
+            <line>
+              <![CDATA[Navigated To Url https://www.zoho.com/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="logoTest()[pri:0, instance:com.tests.HomePageTest@14ef2482]" started-at="2020-02-22T12:27:42Z" name="logoTest" finished-at="2020-02-22T12:27:42Z" duration-ms="10" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Madhurs-MacBook-Air.local', ip: 'fe80:0:0:0:144a:a252:4942:3e72%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=/var/folders/gh/vz_q888j5xvbw8b1gth9m57w0000gn/T/.com.google.Chrome.Qy67Ly}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52720}, acceptInsecureCerts=false, browserVersion=80.0.3987.116, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]
+Session ID: 50d3a10f5ff6a3c0113212a354a4c79b
+*** Element info: {Using=xpath, value=//*[@class='logo-top']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Madhurs-MacBook-Air.local', ip: 'fe80:0:0:0:144a:a252:4942:3e72%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=/var/folders/gh/vz_q888j5xvbw8b1gth9m57w0000gn/T/.com.google.Chrome.Qy67Ly}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52720}, acceptInsecureCerts=false, browserVersion=80.0.3987.116, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]
+Session ID: 50d3a10f5ff6a3c0113212a354a4c79b
+*** Element info: {Using=xpath, value=//*[@class='logo-top']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy9.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at com.pages.HomePage.validateLogo(HomePage.java:25)
+at com.tests.HomePageTest.logoTest(HomePageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.tests.RunnerTest.runTest(RunnerTest.java:82)
+at com.tests.RunnerTest.main(RunnerTest.java:44)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- logoTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.tests.HomePageTest@14ef2482]" started-at="2020-02-22T12:27:42Z" name="afterMethod" finished-at="2020-02-22T12:27:42Z" duration-ms="498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logoTest status=FAILURE method=HomePageTest.logoTest()[pri:0, instance:com.tests.HomePageTest@14ef2482] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[logoTest test Ended]]>
+            </line>
+            <line>
+              <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/logoTest_Failed_22_02_2020_05_57_42.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/logoTest_Failed_22_02_2020_05_57_42.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.HomePageTest@14ef2482]" started-at="2020-02-22T12:27:42Z" name="tearDown" finished-at="2020-02-22T12:27:42Z" duration-ms="123" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Closed]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.tests.HomePageTest -->
+    </test> <!-- Test_1 -->
+  </suite> <!-- Test -->
 </testng-results>

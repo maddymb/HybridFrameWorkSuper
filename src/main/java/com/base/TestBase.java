@@ -123,6 +123,8 @@ public class TestBase {
 			extent_test.log(LogStatus.PASS, result.getName() + " test Passed");
 			String screen = captureScreen(result.getName() + "_Passed");
 			extent_test.log(LogStatus.PASS, extent_test.addScreenCapture(screen));
+			
+			
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			extent_test.log(LogStatus.SKIP,
 					result.getName() + " Test is skipped and skip reason is:-" + result.getThrowable());
@@ -207,6 +209,7 @@ public class TestBase {
 		Log.endTestCase(result.getName() +" test ended");
 		log(result.getName()+" test Ended");
 		getresult(result);
+		
 		driver.close();
 	}
 

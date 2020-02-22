@@ -11,6 +11,7 @@ public class LoginPageTest extends TestBase {
 
 	LoginPage  objLoginPage;
 	HomePage objHomePage;
+	
 	public LoginPageTest() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
