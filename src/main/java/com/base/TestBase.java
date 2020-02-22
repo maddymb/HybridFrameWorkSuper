@@ -122,8 +122,7 @@ public class TestBase {
 		if (result.getStatus() == ITestResult.SUCCESS) {
 			extent_test.log(LogStatus.PASS, result.getName() + " test Passed");
 			String screen = captureScreen(result.getName() + "_Passed");
-			extent_test.log(LogStatus.PASS, extent_test.addScreenCapture(screen));
-			
+			extent_test.log(LogStatus.PASS, extent_test.addScreenCapture(screen));	
 			
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			extent_test.log(LogStatus.SKIP,

@@ -21,27 +21,22 @@ public class RunnerTest {
 		String testCaseName="";
 		String fileName="";
 		
-		
-//		System.out.println(reader.getCellData(sheetName, "username", 3));
-//		String data = reader.getCellData(sheetName, 0, 2);
-//		System.out.println(data);
-		
 		int rowCount = reader.getRowCount(sheetName);
 		System.out.println("Total Rows: "+ rowCount);
 		
 		
-		for(int i=1; i<=rowCount;i++) {
+		for(int i=2; i<=rowCount;i++) {
 		
 			String isRunnable= reader.getCellData(sheetName, "Execution", i);			
 			System.out.println("Execute Test Case :" +isRunnable);
 				if(isRunnable.equalsIgnoreCase("Yes")) {
 					currentRow=i;
-					System.out.println("Current Row"+i);
+					System.out.println("Current Row "+i);
 					testCaseName = reader.getCellData(sheetName, "TestCaseName", i);
 					System.out.println("Test Case Name : "+testCaseName);
 					fileName = "com.tests."+testCaseName;
 					System.err.println(fileName);	
-					runTest(fileName);
+				//	runTest(fileName);
 					String almFlag = reader.getCellData(sheetName, "ALMUpdate", i);
 					if(almFlag.equalsIgnoreCase("Yes")) {
 						
@@ -61,6 +56,7 @@ public class RunnerTest {
 		xmlsuite.setName("Test");
 		xmlsuite.setParallel("false");
 		xmlsuite.setVerbose(1);
+		xmlsuite.addListener("com.retryanalyzer.RetryTranformer");
 		
 		XmlTest xmlTest = new XmlTest(xmlsuite);
 		xmlTest.setName("Test_1");

@@ -8,7 +8,7 @@ import com.base.TestBase;
 
 public class HomePage extends TestBase {
 
-	@FindBy(xpath = "//a[text()='Login']")
+	@FindBy(xpath = "//*[text()='Leads']")
 	WebElement btnLogin;
 
 	@FindBy(xpath = "//*[@class='logo-top']")

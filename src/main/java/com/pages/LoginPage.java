@@ -10,16 +10,17 @@ import com.utility.TestUtility;
 
 public class LoginPage extends TestBase {
 
-	@FindBy(name="lid")
+	@FindBy(id="login_id")
 	WebElement username;
 	
-	@FindBy(name="pwd")
+	@FindBy(id="nextbtn")
+	WebElement nextbtn;
+	
+	@FindBy(id="password")
 	WebElement password;
 	
-	@FindBy(xpath="signin_submit")
-	WebElement loginButton;
-	
-	
+	@FindBy(xpath="(//*[text()='Sign in'])[2]")
+	WebElement signInButton;
 	
 	
 	
@@ -42,12 +43,33 @@ public class LoginPage extends TestBase {
 		TestUtility.sendKeys(username, uname);
 		log("UserName Entered "+uname);
 		
+		nextbtn.click();
+		log("Next Button Clicked");
+		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		TestUtility.sendKeys(password, pass);
 		log("Password Entered "+pass);
+		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		signInButton.click();
+		log("Sign In Button Clicked");
+		
 		return new HomePage();
 		
 		
 	}
 	
-	
+
 }

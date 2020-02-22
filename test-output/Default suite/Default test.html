@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Feb 22 16:14:34 IST 2020</td>
+<td>Started on:</td><td>Sat Feb 22 20:46:53 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28967 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36598 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,50 +76,24 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.tests.LoginPageTest<br/>
-<a href="#Output-1260127127" onClick='toggleBox("Output-1260127127", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-198374825" onClick='toggleBox("Output-198374825", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1260127127" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1260127127">
+<a href="#Output-198374825" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-198374825">
 Clicking on the Login Button<br/>
 Login Button Clicked<br/>
+UserName Entered madhurbhrdwj3@gmail.com<br/>
+Next Button Clicked<br/>
+Password Entered maddymb18<br/>
+Sign In Button Clicked<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;lid&apos;]&quot;}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;Madhurs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:144a:a252:4942:3e72%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;10.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=/var/folders/gh/vz_q888j5xvbw8b1gth9m57w0000gn/T/.com.google.Chrome.spNLUL}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51056}, acceptInsecureCerts=false, browserVersion=80.0.3987.116, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]
-Session ID: bb68570b60ea19541e920d1807c26763
-*** Element info: {Using=name, value=lid}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+<td><div><pre>java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.clear(Unknown Source)
-	at com.utility.TestUtility.sendKeys(TestUtility.java:125)
-	at com.pages.LoginPage.login(LoginPage.java:42)
-	at com.tests.LoginPageTest.loginTest(LoginPageTest.java:27)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.pages.DashboardPage.clickLeadsBtn(DashboardPage.java:22)
+	at com.tests.LoginPageTest.loginTest(LoginPageTest.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,43 +119,13 @@ Session ID: bb68570b60ea19541e920d1807c26763
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1260127127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1260127127'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;lid&apos;]&quot;}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;Madhurs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:144a:a252:4942:3e72%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;10.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=/var/folders/gh/vz_q888j5xvbw8b1gth9m57w0000gn/T/.com.google.Chrome.spNLUL}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51056}, acceptInsecureCerts=false, browserVersion=80.0.3987.116, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]
-Session ID: bb68570b60ea19541e920d1807c26763
-*** Element info: {Using=name, value=lid}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+</pre></div><a href='#' onClick='toggleBox("stack-trace198374825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace198374825'><pre>java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.clear(Unknown Source)
-	at com.utility.TestUtility.sendKeys(TestUtility.java:125)
-	at com.pages.LoginPage.login(LoginPage.java:42)
-	at com.tests.LoginPageTest.loginTest(LoginPageTest.java:27)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.pages.DashboardPage.clickLeadsBtn(DashboardPage.java:22)
+	at com.tests.LoginPageTest.loginTest(LoginPageTest.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -208,8 +152,8 @@ Session ID: bb68570b60ea19541e920d1807c26763
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>21</td>
-<td>com.tests.LoginPageTest@176b75f7</td></tr>
+<td>14</td>
+<td>com.tests.LoginPageTest@172b013</td></tr>
 </table><p>
 </body>
 </html>
