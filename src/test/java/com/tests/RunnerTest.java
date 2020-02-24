@@ -36,7 +36,7 @@ public class RunnerTest {
 					System.out.println("Test Case Name : "+testCaseName);
 					fileName = "com.tests."+testCaseName;
 					System.err.println(fileName);	
-				//	runTest(fileName);
+					runTest(fileName);
 					String almFlag = reader.getCellData(sheetName, "ALMUpdate", i);
 					if(almFlag.equalsIgnoreCase("Yes")) {
 						

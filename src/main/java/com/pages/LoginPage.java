@@ -22,8 +22,16 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath="(//*[text()='Sign in'])[2]")
 	WebElement signInButton;
 	
+	@FindBy(xpath = "(//*[text()='Leads'])[2]")
+	WebElement btnLeads;
 	
+	@FindBy(xpath = "//*[@id='createIcon']")
+	WebElement iconCreate;
 	
+	@FindBy(xpath = "//*[text()='Lead']")
+	WebElement createLeads;
+
+
 	//Constructor of the Class
 	public LoginPage() {	
 		PageFactory.initElements(driver, this); // or we can write PageFactory.initElements(driver, LoginPage.class);
@@ -34,11 +42,10 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();	
 	}
 	
-	
-	
+
 	
 	//This Method will perform the Login Action
-	public HomePage login(String uname,String pass) {
+	public CreateLeadPage login(String uname,String pass) {
 			
 		TestUtility.sendKeys(username, uname);
 		log("UserName Entered "+uname);
@@ -66,7 +73,35 @@ public class LoginPage extends TestBase {
 		signInButton.click();
 		log("Sign In Button Clicked");
 		
-		return new HomePage();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	//	((JavascriptExecutor) driver).executeScript("arguments[0].click();", btnLeads);
+		
+		btnLeads.click();
+		log("Leads Button Clicked");
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		iconCreate.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		createLeads.click();
+		
+		
+		return new CreateLeadPage();
 		
 		
 	}
