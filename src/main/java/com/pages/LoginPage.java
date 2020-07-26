@@ -34,7 +34,8 @@ public class LoginPage extends TestBase {
 
 	//Constructor of the Class
 	public LoginPage() {	
-		PageFactory.initElements(driver, this); // or we can write PageFactory.initElements(driver, LoginPage.class);
+		PageFactory.initElements(driver, this); 
+		// or we can write PageFactory.initElements(driver, LoginPage.class);
 	}
 	
 	//This Method will Return the Title of Web Page

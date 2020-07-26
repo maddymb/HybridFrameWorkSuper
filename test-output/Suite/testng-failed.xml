@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.retryanalyzer.RetryTranformer"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.tests.HomePageTest">
         <methods>
+          <include name="loginTest"/>
           <include name="afterMethod"/>
-          <include name="logoTest"/>
           <include name="tearDown"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="est(failed)">
+    <classes>
       <class name="com.tests.LoginPageTest">
         <methods>
+          <include name="beforeMethod"/>
           <include name="afterMethod"/>
           <include name="loginTest"/>
           <include name="tearDown"/>
-          <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.tests.LoginPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- est(failed) -->
 </suite> <!-- Failed suite [Suite] -->

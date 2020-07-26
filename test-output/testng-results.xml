@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[Operating System : Mac]]>
+    </line>
+    <line>
+      <![CDATA[Browser Selected : Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Navigated To Url https://crm.zoho.com/crm/org664227363/tab/Home/begin]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Login Button Clicked]]>
+    </line>
+    <line>
+      <![CDATA[loginTest test Ended]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_26_07_2020_03_47_36.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_26_07_2020_03_47_36.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Browser Closed]]>
+    </line>
     <line>
       <![CDATA[Operating System : Mac]]>
     </line>
@@ -35,18 +59,18 @@
       <![CDATA[loginTest test Ended]]>
     </line>
     <line>
-      <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_23_02_2020_08_19_36.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_23_02_2020_08_19_36.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_26_07_2020_03_48_12.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_26_07_2020_03_48_12.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
       <![CDATA[Browser Closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-02-23T14:48:42Z" name="Test" finished-at="2020-02-23T14:49:37Z" duration-ms="55021">
+  <suite name="Suite" duration-ms="45407" started-at="2020-07-26T10:17:27Z" finished-at="2020-07-26T10:18:13Z">
     <groups>
     </groups>
-    <test started-at="2020-02-23T14:48:42Z" name="Test_1" finished-at="2020-02-23T14:49:37Z" duration-ms="55021">
+    <test name="Test" duration-ms="45407" started-at="2020-07-26T10:17:27Z" finished-at="2020-07-26T10:18:13Z">
       <class name="com.tests.LoginPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.tests.LoginPageTest@7446d8d5]" started-at="2020-02-23T14:48:43Z" name="beforeMethod" finished-at="2020-02-23T14:48:55Z" duration-ms="12477" status="PASS">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.tests.LoginPageTest@6e535154]" name="beforeMethod" is-config="true" duration-ms="5502" started-at="2020-07-26T10:17:37Z" finished-at="2020-07-26T10:17:42Z">
           <params>
             <param index="0">
               <value>
@@ -66,7 +90,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginTest()[pri:0, instance:com.tests.LoginPageTest@7446d8d5]" started-at="2020-02-23T14:48:55Z" name="loginTest" finished-at="2020-02-23T14:49:36Z" duration-ms="40899" status="PASS">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.tests.LoginPageTest@6e535154]" name="loginTest" duration-ms="30028" started-at="2020-07-26T10:17:42Z" finished-at="2020-07-26T10:18:12Z">
           <reporter-output>
             <line>
               <![CDATA[Clicking on the Login Button]]>
@@ -91,11 +115,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.tests.LoginPageTest@7446d8d5]" started-at="2020-02-23T14:49:36Z" name="afterMethod" finished-at="2020-02-23T14:49:37Z" duration-ms="779" status="PASS">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.tests.LoginPageTest@6e535154]" name="afterMethod" is-config="true" duration-ms="532" started-at="2020-07-26T10:18:12Z" finished-at="2020-07-26T10:18:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:0, instance:com.tests.LoginPageTest@7446d8d5] output=Clicking on the Login Button]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:0, instance:com.tests.LoginPageTest@6e535154] output=Clicking on the Login Button]]]>
               </value>
             </param>
           </params>
@@ -104,11 +128,11 @@
               <![CDATA[loginTest test Ended]]>
             </line>
             <line>
-              <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_23_02_2020_08_19_36.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_23_02_2020_08_19_36.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_26_07_2020_03_48_12.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_26_07_2020_03_48_12.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginPageTest@7446d8d5]" started-at="2020-02-23T14:49:37Z" name="tearDown" finished-at="2020-02-23T14:49:37Z" duration-ms="801" status="PASS">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.LoginPageTest@6e535154]" name="tearDown" is-config="true" duration-ms="173" started-at="2020-07-26T10:18:13Z" finished-at="2020-07-26T10:18:13Z">
           <reporter-output>
             <line>
               <![CDATA[Browser Closed]]>
@@ -116,6 +140,62 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.LoginPageTest -->
-    </test> <!-- Test_1 -->
-  </suite> <!-- Test -->
+      <class name="com.tests.HomePageTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.tests.HomePageTest@17bffc17]" name="beforeMethod" is-config="true" duration-ms="6754" started-at="2020-07-26T10:17:27Z" finished-at="2020-07-26T10:17:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tests.HomePageTest.loginTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Operating System : Mac]]>
+            </line>
+            <line>
+              <![CDATA[Browser Selected : Chrome]]>
+            </line>
+            <line>
+              <![CDATA[Navigated To Url https://crm.zoho.com/crm/org664227363/tab/Home/begin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.tests.HomePageTest@17bffc17]" name="loginTest" duration-ms="1387" started-at="2020-07-26T10:17:34Z" finished-at="2020-07-26T10:17:36Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on the Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Login Button Clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.tests.HomePageTest@17bffc17]" name="afterMethod" is-config="true" duration-ms="548" started-at="2020-07-26T10:17:36Z" finished-at="2020-07-26T10:17:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=HomePageTest.loginTest()[pri:0, instance:com.tests.HomePageTest@17bffc17] output=Clicking on the Login Button]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[loginTest test Ended]]>
+            </line>
+            <line>
+              <![CDATA[<a href='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_26_07_2020_03_47_36.png'> <img src='/Users/maddy/eclipse-workspace/HybridFrameworkSuper/src/main/java/com/screenshots/loginTest_Passed_26_07_2020_03_47_36.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.HomePageTest@17bffc17]" name="tearDown" is-config="true" duration-ms="454" started-at="2020-07-26T10:17:36Z" finished-at="2020-07-26T10:17:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

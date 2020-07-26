@@ -24,6 +24,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.utility.Log;
+import com.utility.RunnerTest;
 import com.utility.TestUtility;
 
 public class TestBase {
@@ -53,6 +54,8 @@ public class TestBase {
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		extent_report = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/reports/Report_"
 				+ formater.format(calendar.getTime()) + ".html", true);
+		
+		
 	}
 
 	/*		
@@ -122,7 +125,8 @@ public class TestBase {
 		if (result.getStatus() == ITestResult.SUCCESS) {
 			extent_test.log(LogStatus.PASS, result.getName() + " test Passed");
 			String screen = captureScreen(result.getName() + "_Passed");
-			extent_test.log(LogStatus.PASS, extent_test.addScreenCapture(screen));	
+			extent_test.log(LogStatus.PASS, extent_test.addScreenCapture(screen));
+			System.out.println("ALM Upadte :"+RunnerTest.almFlag());
 			
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			extent_test.log(LogStatus.SKIP,
@@ -168,7 +172,8 @@ public class TestBase {
 		}
 		return destFile.toString();
 	}
-
+	
+	
 	/*		
 	####################################################################################
 	##############################
@@ -182,8 +187,9 @@ public class TestBase {
 	 #############################	
 	*/
 	
-	@BeforeMethod()
+	//@BeforeMethod()
 	public void beforeMethod(Method result) throws IOException {
+		
 		extent_test = extent_report.startTest(result.getName());
 		Log.startTestCase(result.getName());
 		//log(result.getName() + " test Started");
@@ -203,12 +209,11 @@ public class TestBase {
 	 #############################	
 	*/
 	
-	@AfterMethod()
+	@AfterMethod(alwaysRun = true)
 	public void afterMethod(ITestResult result) {
 		Log.endTestCase(result.getName() +" test ended");
 		log(result.getName()+" test Ended");
 		getresult(result);
-		
 		driver.close();
 	}
 
@@ -225,13 +230,13 @@ public class TestBase {
 	 #############################	
 	*/
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
 		log("Browser Closed");
 		extent_report.endTest(extent_test);
 		extent_report.flush();
-
+		
 	}
 
 	/*		

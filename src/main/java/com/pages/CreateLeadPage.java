@@ -74,7 +74,8 @@ public class CreateLeadPage extends TestBase {
 	
 	//Constructor of the Class
 	public CreateLeadPage() {	
-		PageFactory.initElements(driver, this); // or we can write PageFactory.initElements(driver, LoginPage.class);
+		PageFactory.initElements(driver, this); 
+		// or we can write PageFactory.initElements(driver, LoginPage.class);
 	}
 	
 	
