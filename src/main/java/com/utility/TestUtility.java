@@ -127,28 +127,7 @@ public class TestUtility extends TestBase {
 
 	}
 
-	public static String getText(WebDriver driver, String attributeLocator, String locator) {
-		String getText = "";
-
-		switch (attributeLocator) {
-		case "id":
-			try {
-				if (isElementExist(driver, locator)) {
-					getText = driver.findElement(By.id(locator)).getText().trim();
-					// System.out.println("Text Value of Object :-" +value);
-				}
-
-			} catch (Throwable t) {
-				System.out.println("The Exception for getText is : " + t.getMessage());
-				// Utility.logging("The Exception for getText is : " + t.getMessage());
-				// ReportEvent.testStepReport("", "fail", "The Exception for getText is : " +
-				// t.getMessage());
-				// softAssert.fail("The Exception for getText is : " + t.getMessage());
-			}
-		}
-		return getText;
-
-	}
+	
 
 	public static boolean isElementExist(WebDriver driver, String xpathElement) {
 
@@ -166,84 +145,9 @@ public class TestUtility extends TestBase {
 		return isElementExist;
 	}
 
-	public static boolean sendKeys(WebDriver driver, String attributeLocator, String locator, String valueToEnter) {
+	
 
-		boolean sendKeys = false;
 
-		switch (attributeLocator) {
-		case "id":
-			try {
-				if (isElementExist(driver, locator) == true) {
-					driver.findElement(By.id(locator)).sendKeys(valueToEnter);
-					// driver.findElement(By.xpath(locator)).sendKeys(valueToEnter);
-					System.out.println("Value entered into the text box :-" + valueToEnter);
-					sendKeys = true;
-				}
-
-			} catch (Throwable t) {
-				System.out.println("The Exception for sendKeys is : " + t.getMessage());
-				// Utility.logging("The Exception for sendKeys is : " + t.getMessage());
-				// ReportEvent.testStepReport("", "fail", "The Exception for sendKeys is : " +
-				// t.getMessage());
-				// softAssert.fail("The Exception for sendKeys is : " + t.getMessage());
-				sendKeys = false;
-			}
-		}
-		return sendKeys;
-
-	}
-
-	public static boolean click(WebDriver driver, String attributeLocator, String locator) {
-		boolean click = false;
-		switch (attributeLocator) {
-		case "id":
-			try {
-				if (isElementExist(driver, locator) == true) {
-					driver.findElement(By.id(locator)).click();
-					click = true;
-				}
-			} catch (Throwable t) {
-				System.out.println("The Exception for click is : " + t.getMessage());
-				// Utility.logging("The Exception for click is : " + t.getMessage());
-				// ReportEvent.testStepReport("", "fail", "The Exception for click is : " +
-				// t.getMessage());
-				// softAssert.fail("The Exception for click is : " + t.getMessage());
-				click = false;
-			}
-
-		case "class":
-			try {
-				if (isElementExist(driver, locator) == true) {
-					driver.findElement(By.className(locator)).click();
-					click = true;
-				}
-			} catch (Throwable t) {
-				System.out.println("The Exception for click is : " + t.getMessage());
-				// Utility.logging("The Exception for click is : " + t.getMessage());
-				// ReportEvent.testStepReport("", "fail", "The Exception for click is : " +
-				// t.getMessage());
-				// softAssert.fail("The Exception for click is : " + t.getMessage());
-				click = false;
-			}
-
-		case "xpath":
-			try {
-				if (isElementExist(driver, locator) == true) {
-					driver.findElement(By.xpath(locator)).click();
-					click = true;
-				}
-			} catch (Throwable t) {
-				System.out.println("The Exception for click is : " + t.getMessage());
-				// Utility.logging("The Exception for click is : " + t.getMessage());
-				// ReportEvent.testStepReport("", "fail", "The Exception for click is : " +
-				// t.getMessage());
-				// softAssert.fail("The Exception for click is : " + t.getMessage());
-				click = false;
-			}
-
-		}
-		return click;
-	}
 
 	public static String fnReadPropFile(String strVal) throws IOException {
 
